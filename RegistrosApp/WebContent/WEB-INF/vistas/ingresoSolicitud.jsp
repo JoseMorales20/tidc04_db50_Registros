@@ -12,7 +12,7 @@
 			</div>
 		</div>
 	</c:if>
-	
+
 	<c:if test="${errores != null }">
 		<div class="columns is-centered mb-6">
 			<div class="column is-6">
@@ -65,13 +65,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="card-content has-text-centered">
-						<div class="card-footer-item">
-							<button type="submit" class="button has-background-primary">Ingresar</button>
-						</div>
-					</div>
 				</div>
 			</form>
+			<div class="card">
+				<form method="GET" action="Redirecionamiento.do">
+					<div class="card-content has-text-centered">
+						<div class="card-footer-item">
+							<button type="submit" name="ingresar" class="button has-background-primary">Ingresar</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </main>
